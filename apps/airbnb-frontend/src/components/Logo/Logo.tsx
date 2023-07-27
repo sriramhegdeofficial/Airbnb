@@ -11,7 +11,15 @@ interface IProps {
 const Logo = ({ src, className }: IProps) => {
   const router = useRouter();
   return (
-    <Image src={src} alt="Logo" width={80} height={25} className={className} />
+    <div className="cursor-pointer">
+      <Image
+        src={src}
+        alt="Logo"
+        width={80}
+        height={25}
+        className={className}
+      />
+    </div>
   );
 };
 
