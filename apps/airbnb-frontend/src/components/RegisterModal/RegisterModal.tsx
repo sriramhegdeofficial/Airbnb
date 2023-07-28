@@ -51,10 +51,7 @@ const RegisterModal = forwardRef(function RegisterModal(
         ref={ref as MutableRefObject<HTMLDialogElement>}
         className="modal modal-bottom sm:modal-middle z-0"
       >
-        <form
-          method="dialog"
-          className="modal-box z-[-100] md:max-w-[300px] py-4 z-[-100]"
-        >
+        <form method="dialog" className="modal-box md:max-w-[300px] py-4">
           <form className="w-full z-[-100]">
             <h3 className="font-black text-lg">Welocome to airbnb</h3>
             <p className="text-xs mb-2">Create account</p>
@@ -74,7 +71,7 @@ const RegisterModal = forwardRef(function RegisterModal(
               className="input input-ghost focus:border-none w-full max-w-xs input-sm mb-2 rounded-full"
             />
             <a
-              className="rounded-full btn btn-wide btn-sm w-full hover:bg-rose-300 bg-rose-400 text-white font-bold text-xs tracking-wider mt-5"
+              className="rounded-full btn btn-wide btn-sm  hover:bg-rose-300 bg-rose-400 text-white font-bold text-xs tracking-wider mt-5"
               onClick={handleSubmit(onSubmit)}
             >
               Register
