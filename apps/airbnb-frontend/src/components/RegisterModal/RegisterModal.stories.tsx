@@ -3,14 +3,14 @@
 
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Modal from "./Modal";
+import RegisterModal from "./RegisterModal";
 
-const meta: Meta<typeof Modal> = {
-  component: Modal,
+const meta: Meta<typeof RegisterModal> = {
+  component: RegisterModal,
 };
 
 export default meta;
-type Story = StoryObj<typeof Modal>;
+type Story = StoryObj<typeof RegisterModal>;
 
 export const Primary: Story = {
   args: {},

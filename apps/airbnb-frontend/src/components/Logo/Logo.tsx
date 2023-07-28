@@ -18,6 +18,7 @@ const Logo = ({ src, className }: IProps) => {
         width={80}
         height={25}
         className={className}
+        priority
       />
     </div>
   );

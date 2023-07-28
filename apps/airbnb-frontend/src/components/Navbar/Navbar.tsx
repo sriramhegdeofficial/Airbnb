@@ -1,10 +1,15 @@
 "use client";
 
+import React from "react";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import UserMenu from "../UserMenu/UserMenu";
 
-export default function Navbar() {
+interface Iprops {
+  dialogRef: React.RefObject<HTMLDialogElement>;
+}
+
+export default function Navbar({ dialogRef }: Iprops) {
   return (
     <>
       <div className="navbar bg-base-100 justify-between px-2 md:px-6">
@@ -15,7 +20,7 @@ export default function Navbar() {
           <Search />
         </div>
         <div className="flex-1 flex justify-end">
-          <UserMenu />
+          <UserMenu dialogRef={dialogRef} />
         </div>
       </div>
     </>
